@@ -16,6 +16,13 @@ Personally, I always create a `.ghci` file at the root of all my projects, which
 
 After that, resize your console and make it so you can see it while working in your editor. On Windows you may wish to pass `--topmost` so the console will sit on top of all other windows. On Linux, you probably want to use your window manager to make it topmost or use a [tiling window manager](http://xmonad.org/).
 
+### Vim API
+
+* `Ghcid <args`: runs ghci command from config, or default, `stack ghci`
+* `GhcidKill` : kills ghcid process--necessary when a new dependency or module
+   has been added
+* `GhcidRestart` : runs `Ghcid | GhcidKill`
+
 ### What you get
 
 On every save you'll see a list of the errors and warnings in your project. It uses `ghci` under the hood, so even relatively large projects should update their status pretty quickly. As an example:
