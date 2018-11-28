@@ -391,7 +391,7 @@ function! s:ghcid_stop() abort
   let s:ghcid_job_id = -1
 endfunction
 
-function! s:ghcid_restart() abort
+function! s:ghcid_restart()
     call s:ghcid_kill()
     call s:ghcid()
 endfunction
