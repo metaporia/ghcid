@@ -45,7 +45,7 @@ let s:ghcid_dirty = 0
 
 command! -nargs=* Ghcid        call s:ghcid(<f-args>)
 command!          GhcidKill    call s:ghcid_kill()
-command! -nargs=* GhcidRestart call s:ghcid_restart(<f-args>)
+command!          GhcidRestart call s:ghcid_restart()
 
 sign define ghcid-warning text=× texthl=WarningSign
 sign define ghcid-error text=× texthl=ErrorSign
